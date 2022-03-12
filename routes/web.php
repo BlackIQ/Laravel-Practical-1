@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{id}', function ($id) {
+    // $id = request('id');
+    return view('welcome', ['id' => $id]);
 });
 Route::get('/pizzas', function () {
-    return view('pizzas', ['name' => 'Amir', 'age' => 18]);
+    return view('pizzas', [
+        'name' => 'Amir',
+        'age' => 18,
+    ]);
 });
