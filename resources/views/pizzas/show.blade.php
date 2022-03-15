@@ -15,5 +15,12 @@
             <li>{{ $drink }}</li>
         @endforeach
     </ul>
+    <br>
+    <br>
+    <form action="/pizzas/{{ $pizza->id }}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button>Complete</button>
+    </form>
 </div>
 @endsection
