@@ -22,6 +22,14 @@
                 <option value="Vegen">Normal</option>
             </select>
             <br>
+            <fieldset>
+                <label>Drink</label>
+                <br>
+                <input class="form-check-input" name="toppings[]" type="checkbox" value="CocaCola" id="coca"><label for="coca">CocaCola</label><br>
+                <input class="form-check-input" name="toppings[]" type="checkbox" value="Pepsi" id="pepsi"><label for="pepsi">Pepsi</label><br>
+                <input class="form-check-input" name="toppings[]" type="checkbox" value="7Up" id="7up"><label for="7up">7Up</label><br>
+            </fieldset>
+            <br>
             <button class="btn btn-danger" type="submit" value="order">Create epizza</button>
             <br>
             <br>
