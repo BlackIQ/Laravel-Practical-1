@@ -1,7 +1,7 @@
 @extends('layouts.laylout')
 
 @section('content')
-<div class="" style="padding: 2%;">
+<div>
     <h1>Client</h1>
     <p>For <b>{{ $pizza->name }}</b></p>
     <hr>
