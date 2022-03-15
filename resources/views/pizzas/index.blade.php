@@ -1,8 +1,8 @@
 @extends('layouts.laylout')
 
 @section('content')
-<div class="">
-    <table>
+<div>
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Name</th>
