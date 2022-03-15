@@ -6,6 +6,7 @@
     <hr>
     <div class="col-md-4">
         <form method="POST" action="/pizzas">
+            @csrf
             <label for="name" class="form-label">Name</label>
             <input id="name" class="form-control" placeholder="Name" name="name">
             <br>
@@ -22,6 +23,9 @@
             </select>
             <br>
             <button class="btn btn-danger" type="submit" value="order">Create epizza</button>
+            <br>
+            <br>
+            <p>{{ session('msg') }}</p>
         </form>
     </div>
 </div>
