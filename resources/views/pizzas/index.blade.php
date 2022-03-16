@@ -13,7 +13,7 @@
         </thead>
         <tbody>
             @foreach ($pizzas as $pizza)
-                <tr>
+                <tr onclick="changeUrl('/pizzas/{{ $pizza->id }}');" class="pointer">
                     <td>{{ $pizza->name }}</td>
                     <td>{{ $pizza->type }}</td>
                     <td>{{ $pizza->base }}</td>
