@@ -20,7 +20,7 @@
     <form action="/pizzas/{{ $pizza->id }}" method="POST">
         @csrf
         @method('DELETE')
-        <button>Complete</button>
+        <button class="btn btn-danger btn-small">Delete</button>
     </form>
 </div>
 @endsection
